@@ -32,11 +32,16 @@
   .cage { border: 3px solid var(--ink); height: 200px; display: flex; align-items: center; justify-content: center; }
   .cage img { width: 30%; height: 50px; }
   .prose { column-width: 28ch; column-gap: 32px; }
+  .gh { float: right; display: flex; gap: 8px; margin: 0 0 8px 16px; }
 </style>
 
 <section>
+  <div class="gh">
+    <a class="github-button" href="https://github.com/MarkBlah/lemmings" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star MarkBlah/lemmings on GitHub">Star</a>
+    <a class="github-button" href="https://github.com/MarkBlah/lemmings/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork MarkBlah/lemmings on GitHub">Fork</a>
+  </div>
   <h1>Walker playground</h1>
-  <p class="hint">Add walkers with the bookmarklet or <code>__walker.add()</code>. Drag one to carry it, flick it to throw it. Resize the window and walkers ride the surface they're standing on, so a fast resize launches them.</p>
+  <p class="hint">Add walkers with the button below or <code>__walker.add()</code>. Drag one to carry it, flick it to throw it. Resize the window and walkers ride the surface they're standing on, so a fast resize launches them.</p>
   <button onclick="__walker.add()">Add a walker</button>
 </section>
 
@@ -120,3 +125,4 @@
 
 <div class="floor" style="margin-top:200px;height:60px;background:#e6e6e6"></div>
 <script src="walker.min.js"></script>
+<script async defer src="https://cdn.jsdelivr.net/npm/github-buttons@2.33.1/dist/buttons.min.js"></script>
